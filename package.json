@@ -78,8 +78,12 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "husky": "^4.3.0",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.1.1",
     "react-test-renderer": "^16.13.1",
     "redux-logger": "^3.0.6"
+  },
+  "lint-staged": {
+    "**/*.{ts,js,tsx,jsx,css,json}": "prettier --write --ignore-unknown --ignore-path .prettierignore"
   }
 }
