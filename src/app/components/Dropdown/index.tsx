@@ -30,7 +30,7 @@ export interface Props {
 }
 
 const Dropdown: React.FC<Props> = props => {
-    const { state: filters, dispatch } = React.useContext(FiltersContext)
+    const { dispatch } = React.useContext(FiltersContext)
     const { dispatch: exploreDispatch } = React.useContext(ExploreContext)
     const [visible, setVisible] = React.useState<boolean>(false)
     const [options] = React.useState<OptionType[]>(props.options)

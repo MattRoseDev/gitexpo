@@ -12,11 +12,11 @@ const Explore: React.FC = () => {
     const { dispatch } = React.useContext(ExploreContext)
     const { state } = React.useContext(FiltersContext)
     // fetch repositories
-    const [treding, tredingResponse] = useLazyQuery(api.trending)
+    const [trending, trendingResponse] = useLazyQuery(api.trending)
 
     React.useEffect(() => {
         if (state) {
-            treding({
+            trending({
                 variables: {
                     since: state.since,
                     languages: state.languages,
@@ -24,17 +24,17 @@ const Explore: React.FC = () => {
                 },
             })
         }
-    }, [state])
+    }, [state, trending])
 
     React.useEffect(() => {
-        if (tredingResponse.data) {
+        if (trendingResponse.data) {
             // Set repositories to context
             dispatch({
                 type: ADD_REPOSITORIES,
-                repositories: tredingResponse.data.trending,
+                repositories: trendingResponse.data.trending,
             })
         }
-    }, [tredingResponse.data])
+    }, [trendingResponse.data, dispatch])
 
     return (
         <div>

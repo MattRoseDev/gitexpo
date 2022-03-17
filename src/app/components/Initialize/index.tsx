@@ -29,6 +29,7 @@ const Initialize: React.FC = props => {
                 ...filters,
             },
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return <></>

@@ -15,6 +15,7 @@ const SelectBox: React.FC<Props> = props => {
         if (props.id === 'languages') {
             if (options && options.length > 0) {
                 let languages: string[] = []
+                // eslint-disable-next-line array-callback-return
                 options.map((option: OptionType) => {
                     languages.push(option.value)
                 })
@@ -102,6 +103,7 @@ const SelectBox: React.FC<Props> = props => {
         <Select
             isMulti={props.id === 'languages' ? true : false}
             isClearable={true}
+            // eslint-disable-next-line array-callback-return
             value={props.options.filter((option: OptionType) => {
                 if (props.id === 'languages') {
                     if (filters.languages.includes(option.value)) {

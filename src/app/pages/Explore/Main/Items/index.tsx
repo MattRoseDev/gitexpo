@@ -33,7 +33,7 @@ const Items: React.FC = props => {
                 )
             ) : (
                 <div className='flex justify-center p-10'>
-                    <img src={Spinner} width='50' />
+                    <img src={Spinner} width='50' alt='loading' />
                 </div>
             )}
         </div>
