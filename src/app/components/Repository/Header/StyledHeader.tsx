@@ -9,17 +9,18 @@ export const StyledFullName = styled.a`
     &:hover {
         text-decoration: underline;
     }
-    color: #0366d6;
+    color: #58a6ff;
     & span {
         word-break: break-word;
     }
 `
 
 export const StyledStarButton = styled.button`
-    background-color: #fafbfc;
+    background-color: #21262c !important;
+    color: #c9d1d9;
     font-size: 12px;
     font-weight: 500;
-    border: 1px solid rgba(27, 31, 35, 0.15);
+    border: 1px solid rgb(54 59 65);
     &:hover {
         background-color: #f5f8fa;
     }

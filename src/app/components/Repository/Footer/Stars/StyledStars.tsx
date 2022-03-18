@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledStars = styled.a`
     font-size: 12px;
-    color: #586069;
+    color: #8b949e;
     box-sizing: border-box;
     &:hover {
         color: #0366d6;

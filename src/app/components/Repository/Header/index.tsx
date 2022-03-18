@@ -17,7 +17,7 @@ const Header: React.FC<Props> = props => {
                 <span>
                     <Icon
                         icon='Repo'
-                        fill='#586069'
+                        fill='#8b949e'
                         margin='0 8px 0 0'
                         display='inline-block'
                     />

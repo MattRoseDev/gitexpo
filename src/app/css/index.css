@@ -1,61 +1,63 @@
-@import "fonts.css";
+@import 'fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+    background: #0d1117;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 .bg-gray-100 {
-  background-color: #f5f8fa;
+    background-color: #161b22;
 }
 
 /* New Styles for react select component */
 
 .select-container {
-  border-radius: .5rem;
-  border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    border: 1px solid #1b2027;
 }
 
 .select-control {
-  margin: 8px 10px;
-  border-radius: .5rem !important;
-}
-
-.select-control {
-  margin: 8px 10px;
-  border-radius: .5rem !important;
+    background-color: #0d1117 !important;
+    margin: 8px 10px;
+    border-radius: 0.5rem !important;
+    border: 1px solid #161b22 !important;
 }
 
 .select-option {
-  padding: 8px 8px 8px 30px;
-  background-color: white !important;
-  color: #586069 !important;
+    padding: 8px 8px 8px 30px;
+    background-color: #0d1117 !important;
+    color: #8b949e !important;
 }
 
 .select-option:not(:last-child) {
-  border-bottom: 1px solid #e9ecef;
-} 
+    background-color: #161b22 !important;
+    border-bottom: 1px solid #1b2027;
+}
 
 .select-option:hover {
-  background-color: #0465d6 !important;
-  color: white !important;
+    background-color: #1f6feb !important;
+    color: white !important;
 }
 
 .select-menu {
-  box-shadow: none;
-  border-radius: 0 0 .5rem .5rem !important;
-  overflow: hidden;
+    box-shadow: none;
+    border-radius: 0 0 0.5rem 0.5rem !important;
+    overflow: hidden;
 }
 
 .select-menu-list {
-  padding: 0 !important;
+    padding: 0 !important;
 }
-

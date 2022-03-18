@@ -5,7 +5,7 @@ export const StyledFooter = styled.div``
 export const StyledLanguage = styled.span`
     font-size: 12px;
     border-radius: 50%;
-    color: #586069;
+    color: #8b949e;
     box-sizing: border-box;
 `
 

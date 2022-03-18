@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledLanguage = styled.span`
     font-size: 12px;
-    color: #586069;
+    color: #8b949e;
     box-sizing: border-box;
 `
 
